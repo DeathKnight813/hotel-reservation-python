@@ -1,0 +1,16 @@
+{% extends "SignUp.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+<form role ="form" action="{% url 'hotel_login' %}" method="post">
+    {% csrf_token %}
+    <p>User Login</p>
+    <div class="row1">
+    {{form}}
+    </div>
+    <button type="submit" href="{% url 'RoomType' %}" class="btn-success">Login</button>
+</form>
+{% endblock %}

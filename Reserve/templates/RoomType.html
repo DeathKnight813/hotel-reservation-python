@@ -1,0 +1,9 @@
+{% extends "SignUp.html"}
+{% block content %}
+<ul>
+         {% for room  in rooms %}
+    <li><a href="">{{ room.roomtype }}</a></li>
+         {% endfor %}
+ </ul>
+
+{% endblock %}
